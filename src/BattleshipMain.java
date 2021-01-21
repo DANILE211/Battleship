@@ -66,7 +66,7 @@ public class BattleshipMain extends Application {
         });
         whoWon=controller.getText();
         choiceBox.setValue("Easy");
-        enemyBoard = new Board(false, event -> {
+        enemyBoard = new Board(true, event -> {
             if (!running || END)
                 return;
 
